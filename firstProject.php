@@ -1,2 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>First Project</title>
+</head>
+<body>
 <?php 
-echo 'hello world';
+echo 'Hello World!';
+?>
+</body>
+</html>
+
+
