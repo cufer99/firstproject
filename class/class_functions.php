@@ -18,11 +18,8 @@ class DisplayContent {
         if(mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)){
                 $display[$row['content_id']] = $row;
-                echo '<pre>';
-                print_r($display);
-                echo '</pre>';
             }
+            return $display;
         }
-        return $display;
     }
 }
