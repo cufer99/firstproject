@@ -3,10 +3,10 @@
 // class for database connection
 class databaseConn {
 
-    private $servername;
-    private $username;
-    private $password;
-    private $dbname;
+    public $servername;
+    public $username;
+    public $password;
+    public $dbname;
     public $conn;
 
     public function connection($servername, $username, $password, $dbname) {
@@ -21,9 +21,9 @@ class databaseConn {
         if(!$conn) {
             $this->error('connection failed');
         } else {
-            echo 'connected';
+          //  echo 'connected';
         }
-        var_dump($this->conn);
+       // var_dump($_SERVER);
     }
     
     public function __destruct() {
