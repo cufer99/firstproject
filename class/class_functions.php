@@ -5,20 +5,24 @@ class DisplayContent {
     {
         include 'class_databaseConnection.php';
         $this->db = new db("localhost", "firstproject", "7exrd72f", "firstproject");
-       // var_dump($this->db);
+        // var_dump($this->db);
     }
         
-    function get_description() {
+    public function get_description() {
         
         $sql = "SELECT * FROM languages";
-        $result =$connect->query($sql);
+        $result =$this->db->conn->query($sql);
+        // var_dump($result);
         $display = array();
 
         if(mysqli_num_rows($result) > 0) {
-            $display = mysqli_fetch_assoc($result);
-            return $display;
-        }else {
-            echo 'empty';
+            while ($row = mysqli_fetch_assoc($result)){
+                $display[$row['content_id']] = $row;
+                echo '<pre>';
+                print_r($display);
+                echo '</pre>';
+            }
         }
+        return $display;
     }
 }

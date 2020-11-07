@@ -1,7 +1,9 @@
 <?php
-function hello($name) {
-    echo $name;
+function debug($var){
+    echo '<pre>';
+    print_r($var);
+    echo  '</pre>';
 }
-echo hello('vid');
+
 
 
