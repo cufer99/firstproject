@@ -27,8 +27,6 @@
         echo  $value['description'] . " ";
         echo '<br>';
         echo '</p>';
-
-       
     }
     // debug(); // function to print_r
 ?>
