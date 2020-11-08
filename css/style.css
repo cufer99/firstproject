@@ -9,3 +9,12 @@ p {
     width: 50%;
     margin: 0 auto;
 }
+div form {
+    margin-top: 50px;
+}
+div form input p {
+    margin: 0 auto 10px auto;
+}
+div form input  {
+    margin: 0 auto 10px auto;
+}

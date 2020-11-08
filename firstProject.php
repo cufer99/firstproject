@@ -29,8 +29,19 @@
         echo '</p>';
     }
     
-     debug($test->form()); // function to print_r
+      //debug($_SERVER["REQUEST_METHOD"]); // function to print_r
+      $test->formInsert();
+
 ?>
+<div>
+<form method="post">
+<p>Name : <input type="text" name="name"><br/></p>
+<p>Lastname : <input type="text" name="lname"><br/></p>
+<p>E-mail : <input type="text" name="email"><br/></p>
+<p>age : <input type="int" name="age"><br/></p>
+<p><input type="submit" value = "Submit"></p>
+</form>
+</div>
 </body>
 </html>
 
