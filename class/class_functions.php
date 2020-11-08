@@ -22,4 +22,14 @@ class DisplayContent {
             return $display;
         }
     }
+    public function form() {
+        $sql = "INSERT INTO form (fname, lname, email, age) VALUES ('Dani', 'Cufer', 'dani.cufer@gmail.com', 58)";
+        $result = $this->db->conn->query($sql);
+
+        if($result) {
+            echo 'created';
+        } else {
+            echo 'nope';
+        }
+    }
 }

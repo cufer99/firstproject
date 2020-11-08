@@ -14,7 +14,7 @@
     include 'css/style.css';
     echo '</style>';
     $test = new DisplayContent;
-    $test->get_description();
+  //  $test->get_description();
     foreach ($test->get_description() as  $value) { // for each news array value adds html
 
         echo '<div>';
@@ -28,7 +28,8 @@
         echo '<br>';
         echo '</p>';
     }
-    // debug(); // function to print_r
+    
+     debug($test->form()); // function to print_r
 ?>
 </body>
 </html>
